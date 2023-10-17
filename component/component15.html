@@ -7,11 +7,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section>
-        <div class="pt-4 h-screen">
-            <div class="flex justify-center pb-4">
+    <header>
+        <div class="flex w-full">
+            <button class="my-auto ml-3 w-1/3 ">
+                <div class="w-[20px] m-1.5 h-[1.5px] bg-gray-700"></div>
+                <div class="w-[20px] m-1.5 h-[1.5px] bg-gray-700"></div>
+            </button>
+            <div class="py-4 w-1/3 flex justify-center">
                 <img src="../img/suitsupply-logo.svg" alt="">
             </div>
+            <div class="my-auto flex justify-end items-center w-1/3 mr-3">
+                <div class="m-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="gray" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
+                </div>
+                <div class="m-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="gray" class="bi bi-bookmark" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                    </svg>
+                </div>
+                <div class="m-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="gray" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </header>   
+    <section>
+        <div class="h-screen">
             <div class="flex ">
                 <div class="w-4/6 bg-[#efefef] flex justify-end flex-grow relative">
                         <div class=" flex justify-center">
@@ -178,6 +204,103 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            <div>
+                                <img class="w-12 h-12 mx-auto" src="/img/SizePasspoort_Icon_35px-1.svg" alt="">
+                                <h3 class="text-center text-2xl font-medium mt-4">Create a Size Passport</h3>
+                            </div>
+                            <div class="w-full flex justify-center  pt-4">
+                                <button class="border border-gray-300 hover:border-gray-400 items-center rounded-md w-[85%] flex justify-between py-6 px-4 text-xl font-medium">At home <span class="text-gray-500 w-3/5 text-sm text-start font-light">Pick your normal size, and make adjustments if desired</span></button>
+                            </div>
+                            <div class="w-full flex justify-center  pt-4">
+                                <button class="border border-gray-300 hover:border-gray-400 items-center rounded-md w-[85%] flex justify-between py-6 px-4 text-xl font-medium">At home <span class="text-gray-500 w-3/5 text-sm text-start font-light">Pick your normal size, and make adjustments if desired</span></button>
+                            </div>  
+                            <div>
+                                <h3 class="text-center py-4 text-gray-400 text-sm font-medium">Already have a Size Passport? <a class="text-black hover:underline" href="">Log in</a></h3>
+                            </div>
+                            <div class="mt-auto border-t pt-4">
+                                <div class="flex justify-between items-center w-[85%] mx-auto mt-auto mb-8">
+                                    <div>
+                                        <p class="text-xs text-gray-400">Delivery 2-3 weeks</p>
+                                        <h3 class="text-sm text-gray-800 font-light">$643 USD</h3>
+                                    </div>
+                                    <div class="flex">
+                                        <button class="border px-11 py-2.5 text-sm rounded-md mx-1">Prev</button>
+                                        <button class="border px-11 py-2.5 text-sm bg-[#2d2d2c] text-white rounded-md mx-1">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            <h3 class="text-center text-2xl font-medium mt-4">Select your Size </h3>
+                            <p class="text-center text-gray-500 font-normal text-sm mt-2">Pick the size you usually wear.</p>
+                        </div>
+                        <div style="grid-template-columns: 30px repeat(3, 120px);" class="grid grid-cols-3 gap-x-3 gap-y-3 px-6 text-center">
+                            <div></div>
+                            <div>
+                                <p class="text-sm text-gray-500 mt-10">Short</p>
+                                <p class="text-xs font-light text-gray-400"> < 5.5"</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 mt-10">Regular</p>
+                                <p class="text-xs font-light text-gray-400">5.5 - 6.1"</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 mt-10">Long</p>
+                                <p class="text-xs font-light text-gray-400"> > 6.1"</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-gray-500 font-normal text-sm">XXXS</p>
+                            </div>
+                            <div></div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">30</button>
+                            </div>
+                            <div></div>
+                            <div class="flex items-center">
+                                <p class="text-gray-500 font-normal text-sm">XXS</p>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">31</button>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">32</button>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">33</button>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-gray-500 font-normal text-sm">XS</p>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">34</button>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">35</button>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">36</button>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-gray-500 font-normal text-sm">S</p>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">36</button>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">37</button>
+                            </div>
+                            <div>
+                                <button class="border border-gray-300 hover:border-gray-400 text-gray-500 rounded-md px-12 py-2">38</button>
+                            </div>
+
                         </div>
                     </section>
                 </div>
