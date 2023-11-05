@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3, h4, h5, h6, body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide relative">
+                        <img class="h-screen w-screen object-cover" src="https://theme.madsparrow.me/most/wp-content/uploads/2022/10/most_slide_1.jpg" alt="">
+                        <div class="absolute inset-0">
+                            <div class="flex items-center h-full ml-[50px]">
+                                <div class="">
+                                    <h3 class="block text-2xl text-white font-bold ">OUR VISION</h3>
+                                    <h3 class="block text-[8vw] text-white font-bold ">DESIGN</h3>
+                                    <h3 class="block text-base text-white font-thin">Credibly leverage existing business experiences through <br>  magnetic mindshare. Synergistically exploit <br>  efficient partnerships world-class applications. </h3>
+                                    <a class="btn btn--circle btn--md" role="button" href="https://theme.madsparrow.me/most/grid-style-1/">
+                                        <div class="ms-btn--circle">
+                                            <div class="circle">
+                                                <div class="circle-fill"></div>
+                                                <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" class="circle-outline"><circle cx="25" cy="25" r="23"></circle></svg>
+                                                    <div class="circle-icon">
+                                                        <svg viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-arrow">
+                                                            <path d="M0 5.65612V4.30388L8.41874 4.31842L5.05997 0.95965L5.99054 0L10.9923 4.97273L6.00508 9.96L5.07451 9.00035L8.43328 5.64158L0 5.65612Z"></path>
+                                                        </svg>
+                                                    </div>					
+                                                </div>
+                                        </div>
+
+                                        <div class="ms-btn--label">
+                                            <div class="ms-btn__text text-white text-2xl">Take A  Look</div>
+                                            <div class="ms-btn__border"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="h-screen w-screen object-cover" src="https://theme.madsparrow.me/most/wp-content/uploads/2022/10/most_slide_3.jpg" alt="">
+                    <div class="absolute inset-0">
+                        <div class="flex items-center h-full ml-[50px]">
+                            <div class="">
+                                <h3 class="block text-2xl text-white font-bold ">OUR VISION</h3>
+                                <h3 class="block text-[8vw] text-white font-bold ">DESIGN</h3>
+                                <h3 class="block text-base text-white font-thin">Credibly leverage existing business experiences through <br>  magnetic mindshare. Synergistically exploit <br>  efficient partnerships world-class applications. </h3>
+                                <button class="pt-8 flex items-center">
+                                    <div class="w-2 h-2 border border-white rounded-full"></div>
+                                    <a class="border-b-2 text-xl text-white font-light">Take A Look</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img class="w-auto h-full " src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/1bdebd02-d675-4469-be36-dc248448980d" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <script>
+        var swiper = new Swiper(".swiper", {
+        grabCursor: true,
+        speed: 1200,
+        effect: "slide",
+        loop: false,
+        mousewheel: {
+        invert: false,
+        sensitivity: 1,
+  },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+    el: '.swiper-pagination',
+  },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+});
+
+swiper.enable();
+    </script>
+</body>
+</html>
